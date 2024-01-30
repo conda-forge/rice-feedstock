@@ -10,14 +10,12 @@ source:
   sha256: 8af49d8ba9a007eab8f58ef4c0fde5fe1cad349d6c9c87dd9cbc6ebe687e5cb7
 
 build:
-  number: 0
+  number: 1
   noarch: generic
 
 requirements:
   build:
     - ruby 3.*
-  run:
-    - __unix
 
 test:
   commands:
