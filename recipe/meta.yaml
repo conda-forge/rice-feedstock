@@ -10,17 +10,21 @@ source:
   sha256: 8af49d8ba9a007eab8f58ef4c0fde5fe1cad349d6c9c87dd9cbc6ebe687e5cb7
 
 build:
-  number: 1
+  number: 2
   noarch: generic
 
 requirements:
   build:
+    - ruby 3.*
+  run:
     - ruby 3.*
 
 test:
   commands:
     - test -f $PREFIX/include/rice/rice.hpp  # [unix]
     - test -f $PREFIX/include/rice/stl.hpp   # [unix]
+    - if exist %LIBRARY_INC%\\rice.hpp (exit 0) else (exit 1)  # [win]
+    - if exist %LIBRARY_INC%\\stl.hpp (exit 0) else (exit 1)   # [win]
 
 about:
   home: https://github.com/jasonroelofs/rice
