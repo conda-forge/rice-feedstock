@@ -2,7 +2,7 @@
 {% set version = "4.9.1" %}
 
 package:
-  name: {{ name|lower }}
+  name: {{ name }}
   version: {{ version }}
 
 source:
@@ -15,9 +15,9 @@ build:
 
 requirements:
   host:
-    - ruby 3.*
+    - ruby
   run:
-    - ruby 3.*
+    - ruby
 
 test:
   commands:
