@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/jasonroelofs/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: f2da4cb51805014bc0b79e3c97085dd1603ccdcf49351059df74d3ddcfeff435
+  sha256: 972abc803cd03a70f33ab0e4386feab5a86303c58b7f25e3fde45ddd95efc675
 
 build:
   number: 0
