@@ -1,5 +1,5 @@
 {% set name = "rice" %}
-{% set version = "4.9.1" %}
+{% set version = "4.11.2" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/jasonroelofs/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 972abc803cd03a70f33ab0e4386feab5a86303c58b7f25e3fde45ddd95efc675
+  sha256: 76029c76dbc0f439fea53ae16110ae168efae285cc6c6e011793ac73f861f699
 
 build:
   number: 0
